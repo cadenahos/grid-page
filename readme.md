@@ -15,7 +15,8 @@ displayed as a table cell.
 It is our footer and spans to 100% of space 
 #Making the layout responsive
 With Grid is very easy to do responsiveness because we can easyly reposisioned the areas.
-## screens
+
+## screens Responsive 
 We'll be use the same breakepoins as bootstrap 4
 1.  Extra large = > 1140px  xl
 2.  large       = > 992px   lg
