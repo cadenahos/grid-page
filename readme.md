@@ -13,3 +13,11 @@ contains the sponsors logos. There is a .sponsors section with te display proper
 displayed as a table cell.
 ##.footer:
 It is our footer and spans to 100% of space 
+#Making the layout responsive
+With Grid is very easy to do responsiveness because we can easyly reposisioned the areas.
+## screens
+We'll be use the same breakepoins as bootstrap 4
+1.  Extra large = > 1140px  xl
+2.  large       = > 992px   lg
+3.  Medium      = > 768px   md
+4.  Small       = > 1140px  sm

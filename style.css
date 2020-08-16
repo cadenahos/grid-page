@@ -65,7 +65,7 @@
 	grid-template-rows: 3rem auto;
 	grid-template-areas:
 		"logo menu menu"
-		"content content content "
+		"content content sidebar "
 		"certifications certifications certifications"
 		"footer footer footer";
 }
@@ -100,3 +100,48 @@ main p {
 	height: 3rem;
 }
 
+@media all and (max-width: 992px) {
+	.container{
+		margin: 0 1rem;
+	} 
+}
+
+@media all and (max-width: 768px){
+	.container{
+		grid-template-areas: 
+			"logo menu menu"
+			"content content content"
+			"sidebar sidebar sidebar"
+			"certifications certifications certifications"
+			"footer footer footer"
+	}
+	html {
+		font-size: 14px;
+	}
+	.certifications{
+		grid-template-columns: 1fr 1fr;
+		align-self: start;
+		grid-column-gap: 1rem;
+		grid-row-gap: 1rem;
+	}
+}
+
+@media all and (max-width: 540px) {
+	.container{
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"logo"
+			"menu"
+			"content"
+			"sidebar"
+			"certifications"
+			"footer"
+		}
+	.certifications{
+		grid-template-columns: 1fr;
+	}	
+	.main-menu {
+		justify-self: start;
+	}
+}
